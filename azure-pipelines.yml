@@ -10,5 +10,5 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- bash: showmethedate.sh 
+- bash: ./showmethedate.sh 
   displayName: 'run the date display script'
