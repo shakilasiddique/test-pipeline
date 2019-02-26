@@ -1,3 +1,5 @@
+// Sample program with comments 
+
 package hello;
 
 import static org.hamcrest.Matchers.*;
