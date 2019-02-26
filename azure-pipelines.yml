@@ -10,5 +10,15 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- bash: ./showmethedate.sh 
-  displayName: 'run the date display script'
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'test'
+    displayName: 'Runs the Unit Tests'
+
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'verify'
+    displayName: 'Runs the Integration Tests'
+
