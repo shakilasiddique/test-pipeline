@@ -1,4 +1,4 @@
-// Sample program with comments 
+// Sample program with comments added
 
 package hello;
 
